@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomContentCell" customModule="FlyNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="421" height="364"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOp-my-H6z">
+                    <rect key="frame" x="0.0" y="44" width="421" height="286"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8XM-OC-rEM">
+                            <rect key="frame" x="0.0" y="0.0" width="421" height="190"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="190" id="2V3-lP-1To"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPE-9W-EQW">
+                            <rect key="frame" x="8" y="198" width="405" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P04-VX-jAp">
+                            <rect key="frame" x="8" y="228.5" width="405" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhm-vu-QVa">
+                            <rect key="frame" x="331" y="256" width="82" height="30"/>
+                            <state key="normal" title="Copy"/>
+                            <connections>
+                                <action selector="didCopy:" destination="iN0-l3-epB" eventType="touchUpInside" id="0bm-bS-TBj"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="mhm-vu-QVa" firstAttribute="top" secondItem="P04-VX-jAp" secondAttribute="bottom" constant="-2.5" id="2J5-hG-X2t"/>
+                        <constraint firstItem="mhm-vu-QVa" firstAttribute="leading" secondItem="dOp-my-H6z" secondAttribute="leading" constant="331" id="5Zr-4Q-zHe"/>
+                        <constraint firstAttribute="trailing" secondItem="P04-VX-jAp" secondAttribute="trailing" constant="8" id="5zV-pc-dmr"/>
+                        <constraint firstItem="RPE-9W-EQW" firstAttribute="top" secondItem="8XM-OC-rEM" secondAttribute="bottom" constant="8" id="Akc-GH-JRv"/>
+                        <constraint firstAttribute="trailing" secondItem="mhm-vu-QVa" secondAttribute="trailing" constant="8" id="DpO-lU-29m"/>
+                        <constraint firstAttribute="bottom" secondItem="P04-VX-jAp" secondAttribute="bottom" constant="27.5" id="JBJ-vZ-kOc"/>
+                        <constraint firstItem="8XM-OC-rEM" firstAttribute="leading" secondItem="dOp-my-H6z" secondAttribute="leading" id="Nth-9X-J2T"/>
+                        <constraint firstAttribute="bottom" secondItem="mhm-vu-QVa" secondAttribute="bottom" id="Rsa-fQ-uO9"/>
+                        <constraint firstItem="P04-VX-jAp" firstAttribute="leading" secondItem="dOp-my-H6z" secondAttribute="leading" constant="8" id="WV9-Sf-iKn"/>
+                        <constraint firstItem="8XM-OC-rEM" firstAttribute="top" secondItem="dOp-my-H6z" secondAttribute="top" id="bV1-Xq-mJE"/>
+                        <constraint firstAttribute="trailing" secondItem="8XM-OC-rEM" secondAttribute="trailing" id="cdi-L1-7pZ"/>
+                        <constraint firstItem="P04-VX-jAp" firstAttribute="top" secondItem="RPE-9W-EQW" secondAttribute="bottom" constant="9.5" id="dln-Xx-URK"/>
+                        <constraint firstItem="mhm-vu-QVa" firstAttribute="height" secondItem="P04-VX-jAp" secondAttribute="height" id="qIT-d1-zJC"/>
+                        <constraint firstAttribute="trailing" secondItem="RPE-9W-EQW" secondAttribute="trailing" constant="8" id="smM-rx-T1q"/>
+                        <constraint firstItem="RPE-9W-EQW" firstAttribute="leading" secondItem="dOp-my-H6z" secondAttribute="leading" constant="8" id="v1o-x3-rVz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dOp-my-H6z" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="UVh-Sk-J1r"/>
+                <constraint firstItem="dOp-my-H6z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="s8e-de-OGo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dOp-my-H6z" secondAttribute="trailing" id="sNq-57-AK4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="dOp-my-H6z" secondAttribute="bottom" id="wTt-OT-taB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnCopyOutlet" destination="mhm-vu-QVa" id="cL3-fv-zV5"/>
+                <outlet property="imageBanner" destination="8XM-OC-rEM" id="CDC-41-MTE"/>
+                <outlet property="labelDate" destination="P04-VX-jAp" id="Dwg-Or-Vle"/>
+                <outlet property="labelTitle" destination="RPE-9W-EQW" id="d4u-Yo-GD6"/>
+            </connections>
+            <point key="canvasLocation" x="471.73913043478262" y="-514.28571428571422"/>
+        </view>
+    </objects>
+</document>
